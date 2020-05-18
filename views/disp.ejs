@@ -1,0 +1,29 @@
+<head>
+  <link href="contactcss.css" rel="stylesheet">
+</head>
+<div id="inserting">
+<h1>List of Employees</h1>
+  <ul class="contactss">
+    <table class="contactss">
+      <tr>
+        <th>Number</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+      </tr>
+      <% for(var i=0; i<contactss.length; i++) {%>
+      <tr>
+      <td><%= contactss[i].number%></td>
+      <td><%= contactss[i].name%></td>
+      <td><%= contactss[i].email%></td>
+      <td><%= contactss[i].city%></td>
+
+      </tr>
+    
+  <% } %>
+</table>
+</ul>
+</div>
+<div id="b">
+  <a id="back" href="index.html">Back</a>
+  </div>
